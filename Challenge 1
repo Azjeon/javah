@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class GeneralAverageIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter General Average (GA): ");
+        int GA = scanner.nextInt();
+
+        if (GA >= 96) {
+            System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+        } else if (GA >= 94) {
+            System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+        } else if (GA >= 91) {
+            System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+        } else if (GA >= 88) {
+            System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+        } else if (GA >= 85) {
+            System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+        } else if (GA >= 82) {
+            System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+        } else if (GA >= 79) {
+            System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+        } else if (GA >= 76) {
+            System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+        } else if (GA == 75) {
+            System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+        } else {
+            System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+        }
+        scanner.close();
+    }
+}
