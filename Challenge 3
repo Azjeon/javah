@@ -1,0 +1,9 @@
+public class WhileLoopIncrement {
+    public static void main(String[] args) {
+        int number = 143;
+        while (number <= 220) {
+            System.out.print(number + " ");
+            number++;
+        }
+    }
+}
