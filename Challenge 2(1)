@@ -1,14 +1,18 @@
 infcrement
 
-public class WhileLoopIncrement {
+package loops;
+public class NumbersWhileLoop {
     public static void main(String[] args) {
-        int number = 143;
-        while (number <= 220) {
-            System.out.print(number + " ");
-            number++;
+        int num = 143; 
+
+       
+        while (num <= 220) {
+            System.out.println(num);
+            num++;
         }
     }
 }
+
 
 
 decrement
