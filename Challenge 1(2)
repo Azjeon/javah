@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class GeneralAverageSwitch {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter General Average (GA): ");
+        int GA = scanner.nextInt();
+
+        int category = GA / 3; // Simplify ranges into cases
+
+        switch (category) {
+            case 32:
+            case 31:
+                System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+                break;
+            case 30:
+                System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+                break;
+            case 29:
+                System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+                break;
+            case 28:
+                System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+                break;
+            case 27:
+                System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+                break;
+            case 26:
+                System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+                break;
+            case 25:
+                System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+                break;
+            case 24:
+                System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+                break;
+            case 23:
+                System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+                break;
+            default:
+                System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+                break;
+        }
+        scanner.close();
+    }
+}
