@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class DoWhileRetry {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char choice;
+
+        do {
+            System.out.print("Please enter the 1st number: ");
+            int num1 = scanner.nextInt();
+            System.out.print("Please enter the 2nd number: ");
+            int num2 = scanner.nextInt();
+
+            int sum = num1 + num2;
+            System.out.println("**********************************");
+            System.out.println("The sum is: " + sum);
+            System.out.println("**********************************");
+
+            System.out.print("Do you want to try again [y/n]: ");
+            choice = scanner.next().charAt(0);
+
+        } while (choice == 'y' || choice == 'Y');
+
+        scanner.close();
+    }
+}
